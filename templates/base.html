@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Harmattan:wght@400;500;600;700&family=Montserrat:wght@100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles.css') }}">
+
+    <title>QuranTraining | {{ title }}</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="navbg"></div>
+        <ul class="navlist">
+            <li class="logo">
+                <a href="{{ url_for('home') }}" class="logo-content"><h2>Nass Training</h2></a>
+            </li>
+            <ul class="sublist">
+                <li class="about">
+                    <a href="{{ url_for('about') }}" class="about-content uppercase"><h3>about-me</h3></a>
+                </li>
+                <li class="sign-up">
+                    <a href="{{ url_for('signup') }}" class="signup-content uppercase"><h3>sign-up</h3></a>
+                </li>
+                <li class="menu">
+                    <a href="#" class="menu-content uppercase menu-btn"><h3>menu</h3></a>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="bg">
+            <h1 class="header-text">{{title}}</h1>
+            <div class="circles">
+                <div class="circle c1"></div>
+                <div class="circle c2"></div>
+                <div class="circle c3"></div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>

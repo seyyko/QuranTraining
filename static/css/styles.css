@@ -1,0 +1,150 @@
+*, body {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-primary: rgb(2,0,36);
+    --background-secondary: rgb(229, 229, 229);
+
+    --navbar-bg: black;
+    
+    --header-bg-primary: rgb(2,0,36);
+    --header-bg-secondary: rgb(17, 13, 79);
+    --header-bg-tertiary: rgb(33, 26, 130);
+    --header-bg-quaternary: rgb(41, 31, 190);
+
+    --text-color: rgb(255, 255, 255);
+}
+
+body{
+    background-color: var(--background-primary);
+    color: var(--text-color);
+
+    font-family: 'Tajawal';
+
+    min-height: 200vh;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#navbar{
+    height: 80px; width: 100%;
+
+    position: fixed;
+    overflow: hidden;
+
+    z-index: 999;
+
+    backdrop-filter: blur(10px);
+}
+
+.navlist{
+    height: 100%; width: 100%;
+    margin: 0;
+
+    position: absolute;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbg{
+    position: absolute;
+    height: 100%; width: 100%;
+
+    filter: opacity(.4);
+    background-color: var(--navbar-bg);
+}
+
+ul{
+    display: flex;
+    align-items: center;
+
+    margin-inline: 20px;
+
+    li{
+        padding: 25px;
+    }
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.logo-content{
+    font-family: 'Cinzel Decorative';
+}
+
+header{
+    width: 100%; height: 100vh;
+
+    overflow: hidden;
+    position: relative;
+
+    background-color: var(--header-bg-primary);
+
+}
+
+.header-text{
+    z-index: 1;
+
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: clamp(10px, 4em, 80px);
+}
+
+.circles{
+    filter: blur(40px);
+    width: 100%; height: 100vh;
+}
+
+.c1{
+    --r: 1400px;
+    background: var(--background-primary);
+    background: radial-gradient(circle, var(--background-primary) 0%, var(--header-bg-primary) 35%, var(--header-bg-secondary) 100%);
+
+    --x: -400px;
+    --y: -800px;
+}
+
+.c2{
+    --r: 1200px;
+    background: var(--header-bg-primary);
+    background: radial-gradient(circle, var(--header-bg-primary) 0%, var(--header-bg-secondary) 35%, var(--header-bg-tertiary) 100%);
+
+    --x: 600px;
+    --y: 250px;
+}
+
+.c3{
+    --r: 500px;
+    background: var(--header-bg-secondary);
+    background: radial-gradient(circle, var(--header-bg-secondary) 0%, var(--header-bg-tertiary) 35%, var(--header-bg-quaternary) 100%);
+
+    --x: 100%;
+    --y: -40%;
+
+    transform: translateX(-70%);
+}
+
+.circle{
+    border-radius: 50%;
+    width: var(--r); height: var(--r);
+
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+}
+
+
+
