@@ -1,3 +1,4 @@
+
 # QuranTraining
 
 ## Description
@@ -34,3 +35,48 @@ Le projet est organisé comme suit :
    ```bash
    git clone https://github.com/ton_utilisateur/QuranTraining.git
    cd QuranTraining
+   ```
+
+2. Créez un environnement virtuel (optionnel mais recommandé) :
+
+   ```bash
+   python -m venv venv
+   ```
+
+3. Activez l'environnement virtuel :
+
+   - Sur Windows :
+     ```bash
+     .\venv\Scripts\activate
+     ```
+
+   - Sur macOS/Linux :
+     ```bash
+     source venv/bin/activate
+     ```
+
+4. Installez les dépendances nécessaires :
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Créez un fichier `.env` pour gérer les variables d'environnement si nécessaire.
+
+6. Lancez l'application Flask :
+
+   ```bash
+   python app.py
+   ```
+
+7. Accédez à l'application en ouvrant votre navigateur à l'adresse suivante :
+
+   ```
+   http://127.0.0.1:5000
+   ```
+
+## License
+
+Ce projet est sous la licence **MIT**. Vous êtes libre d'utiliser, de copier, de modifier et de distribuer ce projet, sous réserve de respecter les termes de la licence MIT.
+
+Voir le fichier [LICENSE](LICENSE) pour plus de détails.
