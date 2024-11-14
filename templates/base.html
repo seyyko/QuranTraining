@@ -33,8 +33,65 @@
                         <div class="lower-layer"></div>
                     </div>
                     <div class="floating-menu">
-                        <div class="floatmenu-bg"></div>
-                        <button id="theme-toggle"></button>
+
+                        <div class="cards">
+                            <div id="preferences-modal" class="card1 card">
+                                <div class="card-thumbnail tn1"></div>
+                                <div class="card-header">
+
+                                    <h3 class="card-title">Customize Your Experience</h3>
+                                    <p class="card-description">Personalize your QuranTraining journey to fit your needs. You can switch between dark and light themes for comfortable reading, adjust the font size for better readability, and set your preferred settings.</p>
+
+                                </div>
+                                <div class="card-footer">
+
+                                    <button class="toggle-theme-btn menu-btn" onclick="toggleTheme()">Toggle Dark/Light Theme</button>
+                                    <div class="slider">
+                                        <p>Adjust Font Size:</p>
+                                        <input 
+                                            type="range" 
+                                            id="font-size-slider" 
+                                            min="12" 
+                                            max="24" 
+                                            value="16" 
+                                            oninput="changeFontSize(this.value)"
+                                        >
+                                        <span id="font-size-value">16px</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card2 card">
+                                <div class="card-thumbnail tn2"></div>
+                                <div class="card-header">
+
+                                    <h3 class="card-title">Track Your Progress</h3>
+                                    <p class="card-description">Stay motivated by keeping track of your daily memorization streak. Consistency is key to mastering the Quran, and your streak helps you stay on target. Remember, even one verse a day can make a difference!</p>
+                                
+                                </div>
+                                <div class="card-footer">
+
+                                    <p class="current-streak">current streak : ? days</p>
+                                    <p class="longest-streak">longest streak : ? days</p>
+
+                                </div>
+                            </div>
+
+                            <div class="card3 card">
+                                <div class="card-thumbnail tn3"></div>
+                                <div class="card-header">
+
+                                    <h3 class="card-title">Start Fresh Anytime</h3>
+                                    <p class="card-description">If you ever want to start over, you can delete all your saved data and preferences with a single click. Be careful though — this action cannot be undone!</p>
+
+                                </div>
+                                <div class="card-footer">
+
+                                    <button id="del-data" class="menu-btn" onclick="deleteUserData()">Delete your data</button>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </li>
             </ul>
