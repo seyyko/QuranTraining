@@ -22,14 +22,20 @@
             </li>
             <ul class="sublist">
                 <li class="about">
-                    <a href="{{ url_for('about') }}" class="about-content uppercase underline-hover-animation">about-me</a>
+                    <a href="{{ url_for('about') }}" class="about-content uppercase underline-hover-animation">about</a>
                 </li>
                 <li class="sign-up">
-                    <a href="{{ url_for('signup') }}" class="signup-content uppercase underline-hover-animation">sign-up</a>
+                    <a href="{{ url_for('signup') }}" class="signup-content uppercase underline-hover-animation">sign up</a>
                 </li>
-                <li class="menu menu-closed" onclick="toggle()">
-                    <div class="upper-layer"></div>
-                    <div class="lower-layer"></div>
+                <li class="menu menu-closed">
+                    <div class="menu-logo" onclick="toggle()">
+                        <div class="upper-layer"></div>
+                        <div class="lower-layer"></div>
+                    </div>
+                    <div class="floating-menu">
+                        <div class="floatmenu-bg"></div>
+                        <button id="theme-toggle"></button>
+                    </div>
                 </li>
             </ul>
         </ul>
