@@ -3,73 +3,72 @@
 
 ## Description
 
-**QuranTraining** est une application web conçue pour faciliter la mémorisation des versets du Coran. Son objectif principal est de rendre l'expérience de révision agréable et accessible, en permettant aux utilisateurs de réviser les versets du Coran de manière dynamique et personnalisée.
+**QuranTraining** is a web application designed to facilitate the memorization of Quranic verses. Its primary goal is to make the review experience enjoyable and accessible, allowing users to review Quranic verses in a dynamic and personalized way.
 
-### Concept de l'application :
+### Application Concept:
 
-L'application fonctionne de la manière suivante :
-1. **Sélectionner la sourate la plus petite que tu connaisses** : L'utilisateur choisit la sourate la plus petite qu'il connaisse (par exemple, Sourate Al-Baqara, numéro 002).
-2. **Sélectionner la sourate la plus grande que tu connaisses** : L'utilisateur choisit ensuite la sourate la plus grande qu'il connaisse (par exemple, Sourate Al-Fatiha, numéro 001).
-3. **Choisir le nombre de "manches"** : L'utilisateur définit combien de "manches" (sessions de révision) il souhaite pour sa session.
-4. **Révision aléatoire de versets** : L'application choisit une sourate au hasard dans la plage définie et sélectionne un verset aléatoire. L'utilisateur peut choisir si ce verset se trouve au début, au milieu ou à la fin de la sourate. Le but est de continuer à réviser la sourate à partir du verset affiché.
+The application works as follows:
+1. **Select the smallest Surah you know**: The user selects the smallest Surah they know (for example, Surah Al-Baqara, number 002).
+2. **Select the largest Surah you know**: The user then selects the largest Surah they know (for example, Surah Al-Fatiha, number 001).
+3. **Choose the number of "rounds"**: The user sets how many "rounds" (review sessions) they want for their session.
+4. **Random verse review**: The application randomly picks a Surah within the defined range and selects a random verse. The user can choose if the verse should be from the beginning, middle, or end of the Surah. The goal is to continue reviewing the Surah from the displayed verse onward.
 
-L'accent est mis sur l'expérience utilisateur pour rendre la révision agréable, flexible et adaptée à chaque utilisateur. L'application n'impose pas de méthode rigide et permet à l'utilisateur de choisir la révision de manière interactive.
+The focus is on the user experience to make reviewing enjoyable, flexible, and tailored to each user. The application does not enforce a rigid method and allows users to choose their review interactively.
 
-### Objectif supplémentaire :
+### Additional Goal:
 
-Bien que la fonctionnalité de **page de connexion** soit **optionnelle**, elle sera ajoutée à l'avenir pour permettre aux utilisateurs de sauvegarder leur progression et de reprendre là où ils se sont arrêtés. L'objectif est de rendre l'application aussi accessible et agréable que possible, avec une attention particulière portée à la simplicité d'utilisation.
+While the **login page** functionality is **optional**, it will be added in the future to allow users to save their progress and resume where they left off. The objective is to make the application as accessible and user-friendly as possible, with a focus on simplicity.
 
-## Structure du Projet
+## Project Structure
 
-Le projet est organisé comme suit :
-- **app.py** : Le fichier principal de l'application Flask, qui contient la logique des routes.
-- **templates/** : Dossier contenant les fichiers HTML (base.html, index.html, about.html, signup.html).
-- **static/css/** : Dossier contenant les fichiers CSS pour le style de l'application.
-- **data.json** : Fichier JSON contenant toutes les sourates du Coran.
-- **.env** : Fichier de configuration pour gérer les variables d'environnement sensibles (par exemple, des clés API).
+The project is organized as follows:
+- **app.py**: The main file of the Flask application containing route logic.
+- **templates/**: Directory containing HTML files (base.html, index.html, about.html, signup.html).
+- **static/css/**: Directory containing CSS files for styling the application.
+- **data.json**: JSON file containing all the Surahs of the Quran.
+- **.env**: Configuration file for managing sensitive environment variables (e.g., API keys).
 
 ## Installation
 
-1. Clonez le projet depuis GitHub :
+1. Clone the project from GitHub:
 
    ```bash
-   git clone https://github.com/ton_utilisateur/QuranTraining.git
+   git clone https://github.com/your_username/QuranTraining.git
    cd QuranTraining
    ```
 
-2. Créez un environnement virtuel (optionnel mais recommandé) :
+2. Create a virtual environment (optional but recommended):
 
    ```bash
    python -m venv venv
    ```
 
-3. Activez l'environnement virtuel :
+3. Activate the virtual environment:
 
-   - Sur Windows :
+   - On Windows:
      ```bash
      .\venv\Scripts\activate
      ```
-
-   - Sur macOS/Linux :
+   - On macOS/Linux:
      ```bash
      source venv/bin/activate
      ```
 
-4. Installez les dépendances nécessaires :
+4. Install the necessary dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-5. Créez un fichier `.env` pour gérer les variables d'environnement si nécessaire.
+5. Create a `.env` file to manage environment variables if needed.
 
-6. Lancez l'application Flask :
+6. Run the Flask application:
 
    ```bash
    python app.py
    ```
 
-7. Accédez à l'application en ouvrant votre navigateur à l'adresse suivante :
+7. Access the application by opening your browser at:
 
    ```
    http://127.0.0.1:5000
@@ -77,6 +76,6 @@ Le projet est organisé comme suit :
 
 ## License
 
-Ce projet est sous la licence **MIT**. Vous êtes libre d'utiliser, de copier, de modifier et de distribuer ce projet, sous réserve de respecter les termes de la licence MIT.
+This project is licensed under the **MIT License**. You are free to use, copy, modify, and distribute this project, provided you comply with the terms of the MIT License.
 
-Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+See the [LICENSE](LICENSE) file for more details.
