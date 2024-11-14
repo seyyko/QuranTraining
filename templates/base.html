@@ -18,17 +18,18 @@
         <div class="navbg"></div>
         <ul class="navlist">
             <li class="logo">
-                <a href="{{ url_for('home') }}" class="logo-content"><h2>Quran Training</h2></a>
+                <a href="{{ url_for('home') }}" class="logo-content">Quran Training</a>
             </li>
             <ul class="sublist">
                 <li class="about">
-                    <a href="{{ url_for('about') }}" class="about-content uppercase"><h3>about-me</h3></a>
+                    <a href="{{ url_for('about') }}" class="about-content uppercase underline-hover-animation">about-me</a>
                 </li>
                 <li class="sign-up">
-                    <a href="{{ url_for('signup') }}" class="signup-content uppercase"><h3>sign-up</h3></a>
+                    <a href="{{ url_for('signup') }}" class="signup-content uppercase underline-hover-animation">sign-up</a>
                 </li>
-                <li class="menu">
-                    <a href="#" class="menu-content uppercase menu-btn"><h3>menu</h3></a>
+                <li class="menu menu-closed" onclick="toggle()">
+                    <div class="upper-layer"></div>
+                    <div class="lower-layer"></div>
                 </li>
             </ul>
         </ul>
@@ -36,8 +37,8 @@
 
     <header>
         <div class="bg">
-            <h1 class="header-text">{{title}}</h1>
             <div class="circles">
+                <h1 class="header-text fadein-ltr">{{title}} .</h1>
                 <div class="circle c1"></div>
                 <div class="circle c2"></div>
                 <div class="circle c3"></div>
@@ -49,6 +50,8 @@
         {% block content %}
         {% endblock %}
     </main>
+
+    <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
 
 </body>
 </html>
