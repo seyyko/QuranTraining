@@ -25,6 +25,7 @@ The project is organized as follows:
 - **app.py**: The main file of the Flask application containing route logic.
 - **templates/**: Directory containing HTML files (base.html, index.html, about.html, signup.html).
 - **static/css/**: Directory containing CSS files for styling the application.
+- **static/js/**: Directory containing js files for the application.
 - **data.json**: JSON file containing all the Surahs of the Quran.
 - **.env**: Configuration file for managing sensitive environment variables (e.g., API keys).
 
@@ -33,7 +34,7 @@ The project is organized as follows:
 1. Clone the project from GitHub:
 
    ```bash
-   git clone https://github.com/your_username/QuranTraining.git
+   git clone https://github.com/seyyko/QuranTraining.git
    cd QuranTraining
    ```
 
