@@ -33,7 +33,7 @@ The project is organized as follows:
 1. Clone the project from GitHub:
 
    ```bash
-   git clone https://github.com/your_username/QuranTraining.git
+   git clone https://github.com/seyyko/QuranTraining.git
    cd QuranTraining
    ```
 
