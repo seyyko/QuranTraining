@@ -12,10 +12,11 @@ function changeBg(color) {
 }
 
 
-function floatmenuAnimation(y, op, v){
-    floatingMenu.style.top = y;
-    floatingMenu.style.opacity = op;
-    floatingMenu.style.visibility = v;
+function floatmenuAnimation(pos, opa, vis){
+    floatingMenu.style.transform = `translateY(${pos})`;
+    // floatingMenu.style.filter = `blur(${blur})`;
+    floatingMenu.style.opacity = opa;
+    floatingMenu.style.visibility = vis;
 }
 
 
@@ -34,7 +35,7 @@ function toggle() {
 
         changeBg("var(--background-tertiary)");
 
-        floatmenuAnimation('-10px', '0', 'hidden');
+        floatmenuAnimation('-100px', '0', 'hidden');
     }
 }
 
@@ -58,24 +59,3 @@ function deleteUserData() {
         location.reload();
     }
 }
-
-
-function changeFontSize(size) {
-    // Appliquer la taille de police au body
-    document.body.style.fontSize = size + 'px';
-
-    // Afficher la valeur actuelle du slider
-    document.getElementById('font-size-value').textContent = size + 'px';
-
-    // Sauvegarder la taille dans localStorage
-    localStorage.setItem('fontSize', size);
-}
-
-// Charger la taille de police sauvegardée au chargement de la page
-function loadFontSize() {
-    const savedSize = localStorage.getItem('fontSize') || '16';
-    document.getElementById('font-size-slider').value = savedSize;
-    changeFontSize(savedSize);
-}
-
-document.addEventListener('DOMContentLoaded', loadFontSize);
